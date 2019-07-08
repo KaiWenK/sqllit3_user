@@ -19,8 +19,10 @@ public:
 	bool ExecDBSql(const char* sql, SqliteCallBackFun callfun, void* pData, char** msg);  // 执行数据库语句
 	bool PrepareDBSql(const char* strSql, int nByte, const char **pzTail);  // 准备SQL语句
 	bool SqliteDBStep();                      // 这个过程用于执行有前面PrepareDBSql创建的准备语句。这个语句执行到结果的第一行可用的位置
+	bool FinalizePrepareSqliteDB();           // 这个过程销毁前面被PrepareDBSql创建的准备语句，每个准备语句都必须使用这个函数去销毁以防止内存泄露
 	bool GetTableSqlDB(const char *zSql, char ***pazResult, int *pnRow, int *pnColumn, char **pzErrmsg);    // 非回调的select 查询
 	void FreeSqlTableDB(char **result);       // 释放GetTableSqlDB得到的结果集
+	const unsigned char* GetColTextSqliteDB(int iCol); // 执行sqlite3_step()执行一个准备语句得到的结果集的当前行中返回一个列
 private:
 	sqlite3*            m_pSqliteDB;   // 打开数据库文件时得到的连接对象指针
 	sqlite3_stmt*		m_pStmt;       // 表示一条被编译过的语句对象指针

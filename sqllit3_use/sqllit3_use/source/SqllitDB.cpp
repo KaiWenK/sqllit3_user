@@ -102,6 +102,19 @@ bool CSqllitDB::SqliteDBStep()
 	return false;
 }
 
+bool CSqllitDB::FinalizePrepareSqliteDB()
+{
+	if (!m_pStmt || !m_pSqliteDB)
+	{
+		return false;
+	}
+	if (SQLITE_OK == sqlite3_finalize(m_pStmt))
+	{
+		return true;
+	}
+	return false;
+}
+
 /*===========================================================================================================
 ** 功能 ：执行一般性查询语句，得到表结构相关数据
 ** 参数1：const char *zSql 一般用于插叙的SQL语句，比如SELECT
@@ -130,4 +143,13 @@ void CSqllitDB::FreeSqlTableDB(char **result)
 		return;
 	}
 	sqlite3_free_table(result);
+}
+
+const unsigned char* CSqllitDB::GetColTextSqliteDB(int iCol)
+{
+	if (!m_pStmt || !m_pSqliteDB)
+	{
+		return NULL;
+	}
+	return sqlite3_column_text(m_pStmt, iCol);
 }
