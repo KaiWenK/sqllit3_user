@@ -1,0 +1,243 @@
+﻿生成启动时间为 2019/7/8 12:50:43。
+     1>项目“E:\SQLLIT3\sqllit3_use\sqllite3\sqllite3\sqllite3.vcxproj”在节点 3 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SQLITE_ENABLE_COLUMN_METADATA /D SQLITE_ENABLE_RTREE /D SQLITE_HAS_CODEC=1 /D CODEC_TYPE=CODEC_TYPE_AES128 /D SQLITE_SOUNDEX /D THREADSAFE /D SQLITE_SECURE_DELETE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release\temp\\" /Fd".\Release\temp\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt shell.c sqlite3.c sqlite3secure.c
+         shell.c
+         sqlite3.c
+     1>sqlite3.c(31814): warning C4996: 'GetVersionExA': 被声明为已否决
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(433) : 参见“GetVersionExA”的声明
+     1>sqlite3.c(31814): warning C4996: 'GetVersionExW': 被声明为已否决
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(442) : 参见“GetVersionExW”的声明
+         sqlite3secure.c
+     1>e:\sqllit3\sqllit3_use\sqllite3\sqllite3\sqlite3.c(31814): warning C4996: 'GetVersionExA': 被声明为已否决
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(433) : 参见“GetVersionExA”的声明
+     1>e:\sqllit3\sqllit3_use\sqllite3\sqllite3\sqlite3.c(31814): warning C4996: 'GetVersionExW': 被声明为已否决
+                 C:\Program Files (x86)\Windows Kits\8.1\Include\um\sysinfoapi.h(442) : 参见“GetVersionExW”的声明
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(E:\SQLLIT3\sqllit3_use\sqllite3\sqllite3\.\Release\sqllite3.lib) does not match the Library's OutputFile property value (E:\SQLLIT3\sqllit3_use\sqllite3\sqllite3\Release\sqllit.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(sqllite3) does not match the Library's OutputFile property value (sqllit). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Release\\sqllit.lib" /NOLOGO /LTCG .\Release\temp\shell.obj
+         .\Release\temp\sqlite3.obj
+         .\Release\temp\sqlite3secure.obj
+     1>sqlite3.obj : warning LNK4006: _sqlite3_temp_directory 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_version 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_data_directory 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_rtree_geometry_callback 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_db_readonly 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_db_filename 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_uri_int64 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_uri_boolean 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_uri_parameter 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_test_control 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_file_control 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_extended_result_codes 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_sleep 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_table_column_metadata 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_thread_cleanup 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_get_autocommit 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_global_recover 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_collation_needed16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_collation_needed 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_create_collation16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_create_collation_v2 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_create_collation 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_open16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_open_v2 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_open 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_limit 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_errstr 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_extended_errcode 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_errcode 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_errmsg16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_errmsg 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_wal_checkpoint 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_wal_checkpoint_v2 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_wal_hook 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_wal_autocheckpoint 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_rollback_hook 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_update_hook 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_commit_hook 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_profile 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_trace 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_overload_function 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_create_function16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_create_function_v2 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_create_function 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_interrupt 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_busy_timeout 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_progress_handler 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_busy_handler 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_close_v2 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_close 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_total_changes 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_changes 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_last_insert_rowid 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_db_config 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_db_release_memory 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_db_mutex 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_config 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_shutdown 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_initialize 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_threadsafe 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_libversion_number 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_sourceid 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_libversion 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_complete16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_complete 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_vtab_config 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_vtab_on_conflict 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_declare_vtab 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_create_module_v2 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_create_module 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_free_table 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_get_table 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_prepare16_v2 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_prepare16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_prepare_v2 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_prepare 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_reset_auto_extension 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_cancel_auto_extension 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_auto_extension 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_enable_load_extension 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_load_extension 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_exec 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_strglob 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_set_authorizer 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_blob_reopen 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_blob_bytes 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_blob_write 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_blob_read 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_blob_close 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_blob_open 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_value_numeric_type 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_stmt_status 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_next_stmt 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_stmt_busy 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_stmt_readonly 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_db_handle 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_transfer_bindings 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_bind_parameter_index 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_bind_parameter_name 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_bind_parameter_count 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_bind_zeroblob 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_bind_value 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_bind_text16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_bind_text 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_bind_null 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_bind_int64 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_bind_int 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_bind_double 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_bind_blob 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_origin_name16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_origin_name 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_table_name16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_table_name 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_database_name16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_database_name 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_decltype16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_decltype 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_name16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_name 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_type 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_text16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_value 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_text 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_int64 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_int 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_double 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_bytes16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_bytes 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_blob 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_data_count 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_column_count 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_aggregate_count 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_set_auxdata 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_get_auxdata 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_aggregate_context 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_context_db_handle 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_user_data 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_step 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_error_nomem 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_error_toobig 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_error_code 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_zeroblob 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_value 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_text16le 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_text16be 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_text16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_text 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_null 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_int64 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_int 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_error16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_error 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_double 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_result_blob 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_value_type 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_value_text16le 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_value_text16be 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_value_text16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_value_text 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_value_int64 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_value_int 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_value_double 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_value_bytes16 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_value_bytes 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_value_blob 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_clear_bindings 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_reset 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_finalize 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_expired 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_sql 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_backup_pagecount 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_backup_remaining 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_backup_finish 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_backup_step 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_backup_init 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_enable_shared_cache 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_os_end 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_os_init 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_win32_set_directory 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_win32_utf8_to_mbcs 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_win32_mbcs_to_utf8 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_win32_sleep 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_win32_write_debug 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_strnicmp 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_stricmp 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_randomness 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_log 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_snprintf 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_vsnprintf 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_mprintf 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_vmprintf 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_realloc 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_free 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_malloc 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_memory_highwater 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_memory_used 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_soft_heap_limit 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_soft_heap_limit64 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_memory_alarm 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_release_memory 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_mutex_leave 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_mutex_try 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_mutex_enter 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_mutex_free 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_mutex_alloc 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_vfs_unregister 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_vfs_register 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_vfs_find 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_db_status 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_status 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_compileoption_get 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+     1>sqlite3.obj : warning LNK4006: _sqlite3_compileoption_used 已在 sqlite3secure.obj 中定义；已忽略第二个定义
+         sqllite3.vcxproj -> E:\SQLLIT3\sqllit3_use\sqllite3\sqllite3\.\Release\sqllite3.lib
+       PostBuildEvent:
+         copy /y .\Debug\sqllit.lib ..\..\commlib\lib\sqllit.lib
+         :VCEnd
+         已复制         1 个文件。
+     1>已完成生成项目“E:\SQLLIT3\sqllit3_use\sqllite3\sqllite3\sqllite3.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.77
