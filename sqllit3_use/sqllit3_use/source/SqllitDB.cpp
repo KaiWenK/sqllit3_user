@@ -153,3 +153,82 @@ const unsigned char* CSqllitDB::GetColTextSqliteDB(int iCol)
 	}
 	return sqlite3_column_text(m_pStmt, iCol);
 }
+
+double CSqllitDB::GetColDoubleSqliteDB(int iCol)
+{
+	if (!m_pStmt || !m_pSqliteDB)
+	{
+		return 0.0;
+	}
+	return sqlite3_column_double(m_pStmt, iCol);
+}
+
+int CSqllitDB::GetColNumSqliteDB(sqlite3_stmt* pStmt)
+{
+	if (!m_pSqliteDB || !m_pStmt)
+	{
+		return -1;
+	}
+	return sqlite3_column_count(pStmt);
+}
+/*====================================================================
+** 功能 ：绑定值到预编译语句中
+** 参数1：sqlte_stmt* 预编译sql对象指针
+** 参数2：“?”的索引，从1开始
+** 参数3：二进制数据的起始指针
+** 参数4：二进制数据的长度
+** 参数5：析构回调函数，一般默认为空
+*====================================================================*/
+int CSqllitDB::BindBlobSqliteDB(int i, const void*p, int n)
+{
+	if (!m_pStmt || !m_pSqliteDB)
+	{
+		return -1;
+	}
+	return sqlite3_bind_blob(m_pStmt, i, p, n, NULL);
+}
+
+const void* CSqllitDB::GetBlobSqliteDB(int iCol)
+{
+	if (!m_pStmt || !m_pSqliteDB)
+	{
+		return NULL;
+	}
+	return sqlite3_column_blob(m_pStmt, iCol);
+}
+
+int CSqllitDB::GetBlobColBytesSqliteDB(int iCol)
+{
+	if (!m_pStmt || !m_pSqliteDB)
+	{
+		return NULL;
+	}
+	return sqlite3_column_bytes(m_pStmt, iCol);
+}
+
+int CSqllitDB::GetBlobColIntSqliteDB(int iCol)
+{
+	if (!m_pStmt || !m_pSqliteDB)
+	{
+		return NULL;
+	}
+	return sqlite3_column_int(m_pStmt, iCol);
+}
+
+__int64 CSqllitDB::GetBlobColInt64SqliteDB(int iCol)
+{
+	if (!m_pStmt || !m_pSqliteDB)
+	{
+		return NULL;
+	}
+	return sqlite3_column_int64(m_pStmt, iCol);
+}
+
+const char* CSqllitDB::GetLastSqlErrorMsg()
+{
+	if (!m_pSqliteDB)
+	{
+		return NULL;
+	}
+	return sqlite3_errmsg(m_pSqliteDB);
+}
