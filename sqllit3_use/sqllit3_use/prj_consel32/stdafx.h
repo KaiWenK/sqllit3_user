@@ -13,7 +13,4 @@
 
 
 // TODO:  在此处引用程序需要的其他头文件
-extern "C"
-{
-#include "sqlite3.h"
-}
+#include "SqllitDB.h"

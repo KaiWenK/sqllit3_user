@@ -27,6 +27,9 @@
     <ClInclude Include="..\include\SqllitDB.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\ConsolMain.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -36,6 +39,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="..\source\SqllitDB.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\ConsolMain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

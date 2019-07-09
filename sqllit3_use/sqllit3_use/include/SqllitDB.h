@@ -1,6 +1,11 @@
 #ifndef SQLLITDB_H
 #define SQLLITDB_H
 
+extern "C"
+{
+#include "sqlite3.h"
+}
+
 // 执行数据库回调
 typedef int(*SqliteCallBackFun)(void*callbackdata, int ncols, char** values, char** headers);
 
