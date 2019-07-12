@@ -4,13 +4,18 @@
 //
 
 #pragma once
-
+#define _CRT_SECURE_NO_WARNINGS
 #include "targetver.h"
 
 #include <stdio.h>
 #include <tchar.h>
 
-
+#include <windows.h>
+#include <shlwapi.h>
+#include <string>
+#include <io.h>
 
 // TODO:  在此处引用程序需要的其他头文件
 #include "SqllitDB.h"
+
+#pragma comment(lib, "Shlwapi.lib")

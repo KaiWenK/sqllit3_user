@@ -1,11 +1,12 @@
-﻿生成启动时间为 2019/7/8 14:06:11。
-     1>项目“E:\sqllit3_user\sqllit3_use\sqllite3\sqllite3\sqllite3.vcxproj”在节点 2 上(Rebuild 个目标)。
+﻿生成启动时间为 2019/7/12 14:58:28。
+     1>项目“E:\sqllit3_user\sqllit3_use\sqllite3\sqllite3\sqllite3.vcxproj”在节点 3 上(Rebuild 个目标)。
      1>ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SQLITE_ENABLE_COLUMN_METADATA /D SQLITE_ENABLE_RTREE /D SQLITE_HAS_CODEC=1 /D CODEC_TYPE=CODEC_TYPE_AES256 /D SQLITE_CORE /D THREADSAFE /D SQLITE_SOUNDEX /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\temp\\" /Fd".\Debug\temp\vc120.pdb" /Gd /TC /wd4006 /analyze- /errorReport:prompt shell.c sqlite3.c sqlite3secure.c
          sqlite3secure.c
          sqlite3.c
          shell.c
          正在生成代码...
+     1>cl : 命令行 warning D9028: 最小重新生成失败，正在转换为标准生成
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1361,5): warning MSB8012: TargetPath(E:\sqllit3_user\sqllit3_use\sqllite3\sqllite3\.\Debug\sqllite3.lib) does not match the Library's OutputFile property value (E:\sqllit3_user\sqllit3_use\sqllite3\sqllite3\Debug\sqllit.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetName(sqllite3) does not match the Library's OutputFile property value (sqllit). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
        Lib:
@@ -233,4 +234,4 @@
 
 生成成功。
 
-已用时间 00:00:02.29
+已用时间 00:00:02.89

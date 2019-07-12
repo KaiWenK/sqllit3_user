@@ -31,8 +31,9 @@ public:
 		              int nByte,
 					  const char **pzTail );                  // 准备SQL语句
 	bool SqliteDBStep();                                      // 这个过程用于执行有前面PrepareDBSql创建的准备语句。这个语句执行到结果的第一行可用的位置
+
 	bool FinalizePrepareSqliteDB();                           // 这个过程销毁前面被PrepareDBSql创建的准备语句，每个准备语句都必须使用这个函数去销毁以防止内存泄露
-	
+	int PrepareDBReSet();                                     // 恢复预编译的语句
 	bool GetTableSqlDB(const char *zSql,
 		               char ***pazResult, 
 					   int *pnRow, 
@@ -44,6 +45,7 @@ public:
 	double GetColDoubleSqliteDB(int iCol);                    // 同GetColTextSqliteDB
 	int GetColNumSqliteDB(sqlite3_stmt* pStmt);               // 获得结果集中的列数
 	int BindBlobSqliteDB(int i, const void*p, int n);         // 用以给预编译的语句插入值（语句中带？，下标从1开始）
+	int BindIntSqliteDB(int i, int nValue);
 	const void* GetBlobSqliteDB(int iCol);                    // 从执行sqlite3_step()执行一个准备语句得到的结果集的当前行中返回一个列
 	int GetBlobColBytesSqliteDB(int iCol);                    // 从执行sqlite3_step()执行一个准备语句得到的结果集的当前行中返回一个列
 	int GetBlobColIntSqliteDB(int iCol);

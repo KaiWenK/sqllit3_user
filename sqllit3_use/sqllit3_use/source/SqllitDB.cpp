@@ -46,6 +46,11 @@ bool CSqllitDB::OpenSqllitDB(const char* filename)
 	{
 		return true;
 	}
+	else
+	{
+		sqlite3_close(m_pSqliteDB);
+		m_pSqliteDB = NULL;
+	}
 	return false;
 }
 
@@ -63,6 +68,14 @@ bool CSqllitDB::CloseSqllitDB()
 	return false;
 }
 
+/*=========================================================================================
+** 功 能：编译和执行零个或多个SQL 语句
+** 参数1：const char* sql sql语句
+** 参数2：SqliteCallBackFun callfun执行成功的回调函数
+** 参数3：void* pData 给回调函数传参数
+** 参数4：char** msg 发生错误字符串消息
+**
+*=========================================================================================*/
 bool CSqllitDB::ExecDBSql(const char* sql, SqliteCallBackFun callfun, void* pData, char** msg)
 {
 	if (!m_pSqliteDB)
@@ -76,13 +89,19 @@ bool CSqllitDB::ExecDBSql(const char* sql, SqliteCallBackFun callfun, void* pDat
 	return false;
 }
 
+/*=========================================================================================
+** 功 能：预编译语句，就是这个意思
+** 参数1：const char* sql sql语句
+** 参数2：int nByte sql语句的字节数
+** 参数3：const char **pzTail 指向zsql未使用部分的指针
+*=========================================================================================*/
 bool CSqllitDB::PrepareDBSql(const char* strSql, int nByte, const char **pzTail)
 {
 	if (!m_pSqliteDB)
 	{
 		return false;
 	}
-	if (SQLITE_OK == sqlite3_prepare_v2(m_pSqliteDB, strSql, nByte, &m_pStmt, pzTail))
+	if (SQLITE_OK == sqlite3_prepare(m_pSqliteDB, strSql, nByte, &m_pStmt, pzTail))
 	{
 		return true;
 	}
@@ -95,7 +114,7 @@ bool CSqllitDB::SqliteDBStep()
 	{
 		return false;
 	}
-	if (SQLITE_OK == sqlite3_step(m_pStmt))
+	if (SQLITE_DONE == sqlite3_step(m_pStmt))
 	{
 		return true;
 	}
@@ -110,9 +129,19 @@ bool CSqllitDB::FinalizePrepareSqliteDB()
 	}
 	if (SQLITE_OK == sqlite3_finalize(m_pStmt))
 	{
+		m_pStmt = NULL;
 		return true;
 	}
 	return false;
+}
+
+int CSqllitDB::PrepareDBReSet()
+{
+	if (!m_pStmt || !m_pSqliteDB)
+	{
+		return -1;
+	}
+	return sqlite3_reset(m_pStmt);
 }
 
 /*===========================================================================================================
@@ -186,6 +215,15 @@ int CSqllitDB::BindBlobSqliteDB(int i, const void*p, int n)
 		return -1;
 	}
 	return sqlite3_bind_blob(m_pStmt, i, p, n, NULL);
+}
+
+int CSqllitDB::BindIntSqliteDB(int i, int nValue)
+{
+	if (!m_pStmt || !m_pSqliteDB)
+	{
+		return -1;
+	}
+	return sqlite3_bind_int(m_pStmt, i, nValue);
 }
 
 const void* CSqllitDB::GetBlobSqliteDB(int iCol)

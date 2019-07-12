@@ -6,8 +6,8 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	CConsolMain main;
-	while (main.Process());
-	return 0;
+	CConsolMain* pmain = new CConsolMain();
+	while (pmain->StartProcess());
+	return (int)0;
 }
 
